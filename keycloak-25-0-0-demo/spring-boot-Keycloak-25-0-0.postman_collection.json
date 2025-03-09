@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "bb1d37ba-2c13-4dfe-95ef-ce532124d6cd",
+		"name": "spring-boot-Keycloak-25-0-0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11304802"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"ravichanderjha@gmail.com\",\n  \"password\": \"securePass123\",\n  \"firstName\": \"Ravi\",\n  \"lastName\": \"Chander Jha\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/auth/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"auth",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "captcha-token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/auth/api/captcha/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"auth",
+						"api",
+						"captcha",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "captcha-image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/auth/api/captcha/image/gixiculaja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"auth",
+						"api",
+						"captcha",
+						"image",
+						"gixiculaja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "captcha-verify",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
