@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: keycloak-25-0-0-demo
+server:
+  port: 8888
+  servlet:
+    context-path: /auth
+
+app:
+  keycloak:
+    admin:
+      clientId: admin-cli
+      clientSecret: RwM8lD0Jn16mHeT6Fpr6RRhw4XKTeklA
+    realm: spring
+    serverUrl: http://localhost:7000
+

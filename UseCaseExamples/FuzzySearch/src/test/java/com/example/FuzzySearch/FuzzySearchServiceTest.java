@@ -25,7 +25,7 @@ public class FuzzySearchServiceTest {
 
     @Test
     void exactMatchInName() {
-        JsonNode node = createNode("John Doe", "GroupA", "HR");
+        JsonNode node = createNode("Jon Doe", "GroupA", "HR");
         List<JsonNode> nodes = Collections.singletonList(node);
 
         List<JsonNode> result = fuzzySearchService.fuzzySearch(nodes, "John Doe", 70);

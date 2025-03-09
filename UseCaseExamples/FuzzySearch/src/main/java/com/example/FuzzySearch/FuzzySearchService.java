@@ -40,6 +40,8 @@ public class FuzzySearchService {
         double groupScore = calculateSimilarity(group, searchTerm);
         double departmentScore = calculateSimilarity(department, searchTerm);
 
+        System.out.println("Name: " + name + " Score: " + nameScore);
+
         return Math.max(nameScore, Math.max(groupScore, departmentScore));
     }
 
